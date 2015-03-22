@@ -2,6 +2,10 @@
   "name": "ractive-componentify",
   "version": "0.1.0",
   "description": "Browserify transform for ractive components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blackgate/ractive-componentify.git"
+  },
   "keywords": [
     "browserify",
     "transform",

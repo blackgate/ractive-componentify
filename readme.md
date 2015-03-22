@@ -50,7 +50,7 @@ componentify.compilers["text/es6"] = function (source, file) {
 }
 ```
 
-Currentlty Sourcemaps are only supported for js compilers.
+Currently Sourcemaps are only supported for js compilers.
 
 You can also override the default `text/javascript` and `text/css` compilers.
 
