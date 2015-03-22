@@ -1,0 +1,23 @@
+{
+  "name": "ractive-componentify",
+  "version": "0.1.0",
+  "description": "Browserify transform for ractive components",
+  "keywords": [
+    "browserify",
+    "transform",
+    "ractive",
+    "templating",
+    "templates",
+    "component",
+    "components"
+  ],
+  "main": "lib/ractive-componentify.js",
+  "author": "Hugo Pires",
+  "license": "MIT",
+  "dependencies": {
+    "es6-promise": "^2.0.1",
+    "ractive": "^0.7.1",
+    "through": "^2.3.6",
+    "vlq": "^0.2.1"
+  }
+}
