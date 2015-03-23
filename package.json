@@ -20,7 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "es6-promise": "^2.0.1",
-    "ractive": "^0.7.1",
+    "ractive": "^0.6.1",
     "through": "^2.3.6",
     "vlq": "^0.2.1"
   }
