@@ -2,7 +2,7 @@
 
 A versatile browserify tranform for ractive components, folowing the [Ractive.js component specification](https://github.com/ractivejs/component-spec).
 
-Inspired by ractiveify, it lets you compile the component contents of the script and style tags from a language of your choice.
+Inspired by ractiveify, it lets you compile the component contents of the script and style tags using a language of your choice.
 
 It also generates sourcemaps that map directly to the component original source.
 
@@ -23,7 +23,7 @@ b.transform(componentify);
 b.bundle();
 ```
 
-By default ractive-componentify uses the `ract` extension. If you want to use another extension (`html` for example), you can do it this way:
+By default ractive-componentify uses the `ract` extension. If you want to use another one (`html` for example), you can do it this way:
 
 ```javascript
 var browserify   = require('browserify');
@@ -36,21 +36,37 @@ b.bundle();
 
 ## Defining your own compilers
 
-You define compilers by the type specified on the script and style tags, like this:
+Compilers are defined using the same value of the type attribute of the script and style tags, like this:
 
 ```javascript
 var componentify = require('ractive-componentify');
 
 componentify.compilers["text/es6"] = function (source, file) {
-    // Your compile code goes here
+  // Your compile code goes here
+  return {
+    source: /* compiled source */,
+    map: /* resulting sourcemap */
+  };
+}
+```
+
+You can also return a promise
+
+```javascript
+var componentify = require('ractive-componentify');
+
+componentify.compilers["text/es6"] = function (source, file) {
+  // Your compile code goes here
+  return compiler.then(function(output) {
     return {
       source: /* compiled source */,
       map: /* resulting sourcemap */
     };
+  });
 }
 ```
 
-Currently Sourcemaps are only supported for js compilers.
+Currently Sourcemaps are only supported in js compilers.
 
 You can also override the default `text/javascript` and `text/css` compilers.
 
