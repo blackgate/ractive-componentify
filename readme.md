@@ -1,6 +1,6 @@
 # ractive-componentify
 
-A versatile browserify tranform for ractive components, folowing the [Ractive.js component specification](https://github.com/ractivejs/component-spec).
+A versatile browserify transform for ractive components, folowing the [Ractive.js component specification](https://github.com/ractivejs/component-spec).
 
 Inspired by ractiveify, it lets you compile the component contents of the script and style tags using a language of your choice.
 
@@ -14,23 +14,23 @@ npm install ractive-componentify --save
 
 ## Configuring the browserify transform
 
-```javascript
-var browserify   = require('browserify');
-var componentify = require('ractive-componentify');
-
-var b = browserify();
-b.transform(componentify);
-b.bundle();
-```
-
-By default ractive-componentify uses the `ract` extension. If you want to use another one (`html` for example), you can do it this way:
 
 ```javascript
 var browserify   = require('browserify');
 var componentify = require('ractive-componentify');
 
 var b = browserify();
-b.transform(componentify, { extension: 'html' });
+b.transform(componentify, {
+
+  // extension to parse
+  // default: 'ract'
+  extension: 'ract',
+
+  // require a ractive instance when requiring components
+  // dafault: true
+  requireRactive: true
+
+});
 b.bundle();
 ```
 
