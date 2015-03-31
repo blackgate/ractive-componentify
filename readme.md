@@ -1,6 +1,6 @@
 # ractive-componentify
 
-A versatile browserify transform for ractive components, folowing the [Ractive.js component specification](https://github.com/ractivejs/component-spec).
+A versatile browserify transform for ractive components, following the [Ractive.js component specification](https://github.com/ractivejs/component-spec).
 
 Inspired by ractiveify, it lets you compile the component contents of the script and style tags using a language of your choice.
 
