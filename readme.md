@@ -82,3 +82,16 @@ var app = new Main({
   }
 });
 ```
+
+## Partials
+
+You can also import partials in component files. The only requirement is that
+partial files need to start with an underscore.
+
+```html
+<link rel="ractive" href="path/to/_mypartial.ract">
+
+{{>mypartial}}
+```
+
+The link, style and script tags are ignored inside partials.
