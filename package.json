@@ -1,6 +1,6 @@
 {
   "name": "ractive-componentify",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Browserify transform for ractive components",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "es6-promise": "^2.0.1",
-    "ractive": "^0.7.2",
+    "ractive": "^0.7.3",
     "through": "^2.3.6",
     "vlq": "^0.2.1"
   }
