@@ -1,6 +1,6 @@
 {
   "name": "ractive-componentify",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Browserify transform for ractive components",
   "repository": {
     "type": "git",
@@ -24,6 +24,6 @@
     "vlq": "^0.2.1"
   },
   "peerDependencies": {
-    "ractive": "^0.7.0 || ^0.8.0-edge"
+    "ractive": "^0.7.0 || ^0.8.0"
   }
 }
