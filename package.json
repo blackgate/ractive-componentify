@@ -1,6 +1,6 @@
 {
   "name": "ractive-componentify",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Browserify transform for ractive components",
   "repository": {
     "type": "git",
